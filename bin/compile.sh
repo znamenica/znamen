@@ -30,6 +30,8 @@ name="Богослужебный круг"
 book=book
 mkdir -p "$book"
 
+book[1]="Рукописи Глебовы"
+
 chapter[1]="Вечерня"
 chapter[15]="Павечерница"
 chapter[18]="Полунощница"
@@ -82,8 +84,9 @@ section[60]="Достойно есть"
 section[61]="Задостойники"
 section[51]="Подостойники"
 section[63]="Запричастники"
-section[64]="Попричастники с аллилуею"
-section[65]="Стихира кресту"
+section[64]="Попричастники"
+section[65]="Аллилуия"
+section[66]="Стихира кресту"
 
 section[101]="Рождество Богородицы"
 section[102]="Крестовоздвижение"
@@ -132,6 +135,10 @@ section[144]="Усекновение главы"
 
 section[201]="Последование по усопшим"
 
+daily_round="Суточный круг"
+daily_round_pages[1]="1.1.1-4"
+daily_round_pages[2]="1.2.1-3"
+
 function pre {
     QW=70%
     QR=60%
@@ -161,6 +168,17 @@ function book {
     fi
     rm -f "$2/$f.ppm"
 }
+
+i=0
+while [ -n "$daily_round_pages[$i]" ]
+do
+    list=$daily_round_pages[$i]
+
+
+done
+
+
+exit
 
 c=''
 i=0

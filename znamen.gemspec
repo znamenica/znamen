@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Znamen::VERSION
   spec.authors       = ["Malo Skrylevo"]
   spec.email         = ["majioa@yandex.ru"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Рукописи и чисменописи знаменного и демественного роспевов.}
+  spec.summary       = %q{Рукописи и чисменописи знаменного и демественного роспевов.}
   spec.homepage      = ""
   spec.license       = "MIT"
 

@@ -75,7 +75,7 @@ s[ 'книги' ].each_pair do |book, value|
 
       clist = begin
          Dir.foreach( dir ).sort.map do |file|
-            if file =~ /(\d)?\. (\d?\d\d\d)\.xcf$/
+            if file =~ /(?:(\d)\. )?(\d?\d\d\d)\.xcf$/
                [ [ $1, $2.to_i ], [ $1, file ] ]
             end
          end.compact.to_h

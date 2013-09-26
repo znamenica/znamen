@@ -25,6 +25,9 @@ set -x
 #fb3321 - 202120
 #fc301f - 202120
 
+
+#normal font color - 150f07
+
 name="Богослужебный круг"
 #declare -x djvus pdfs
 book=book

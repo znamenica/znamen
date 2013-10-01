@@ -16,12 +16,6 @@ task :pre do
    sh 'bundle install'
 end
 
-desc "Generate gem"
-task :gem do
-   sh 'gem build znamen.gemspec'
-   sh "gem install znamen-#{Znamen::VERSION}.gem"
-end
-
 desc "Distilled clean"
 task :distclean do
    sh 'git clean -fd'
@@ -29,13 +23,10 @@ task :distclean do
 end
 
 task :book do
-   sh './bin/book.rb'
+   sh 'knigodej'
 end
 
 
 task(:default).clear
 task :default => :pre
-task :release => [ :req ]
-task :gem => [ :req ]
-task :build => [ :prebundle, :pre, :gem ]
 

@@ -1,5 +1,7 @@
+#coding: utf-8
+#
 desc "Prepare bundler"
-task :prebundle do
+task :bundleup do
    sh 'gem install bundler --version "~> 1.3.1" --no-rdoc --no-ri'
 end
 
@@ -12,7 +14,7 @@ task :req do
 end
 
 desc "Prepare bundle environment"
-task :pre do
+task :up do
    sh 'bundle install'
 end
 
@@ -23,10 +25,14 @@ task :distclean do
 end
 
 task :book do
-   sh 'knigodej'
+   sh 'knigodej -s znamen.bs.yml -b "Суточный круг+"'
+end
+
+task :all do
+   sh 'knigodej -s znamen.bs.yml'
 end
 
 
 task(:default).clear
-task :default => :pre
+task :default => :book
 

@@ -1,6 +1,12 @@
 # Znamen
 
-TODO: Write a gem description
+to make the whole znabem bookshelf, type:
+
+    knigodej -s znamen.bs.yml
+
+to make the specific book from the whole znabem bookshelf, type:
+
+    knigodej -s znamen.bs.yml -b "Суточный круг+"
 
 ## Installation
 

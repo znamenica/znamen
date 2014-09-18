@@ -1,5 +1,6 @@
 book/
 *~
+*.swp
 *.gem
 *.rbc
 .bundle
